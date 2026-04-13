@@ -1,0 +1,90 @@
+{
+  "paths": {
+    "upstreamRepo": "../GStack",
+    "upstreamMirror": "third_party/upstream-core",
+    "brandedWorkspace": "workspace/galeenv-workspace",
+    "hktMemoryRepo": "../../HKTMemory"
+  },
+  "excludeGlobs": [
+    ".git/**",
+    "node_modules/**",
+    ".venv/**",
+    "__pycache__/**",
+    ".DS_Store",
+    "browse/dist/**",
+    "design/dist/**",
+    ".agents/**",
+    ".cursor/**",
+    ".slate/**",
+    ".opencode/**",
+    ".openclaw/**"
+  ],
+  "preserveGlobs": [
+    "LICENSE",
+    "**/LICENSE",
+    "**/*.png",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.gif",
+    "**/*.webp",
+    "**/*.ico",
+    "**/*.icns",
+    "**/*.pdf",
+    "**/*.zip",
+    "**/*.db",
+    "**/*.sqlite"
+  ],
+  "branding": {
+    "safe": [
+      {
+        "pattern": "~/.claude/skills/gstack",
+        "replacement": "~/.claude/skills/galeenv"
+      },
+      {
+        "pattern": "/gstack-",
+        "replacement": "/galeenv-"
+      },
+      {
+        "pattern": "gstack-",
+        "replacement": "galeenv-"
+      },
+      {
+        "pattern": "Garry's Stack",
+        "replacement": "Gale Coding Environment"
+      },
+      {
+        "pattern": "Install gstack",
+        "replacement": "Install GaleEnv"
+      },
+      {
+        "pattern": "gstack ready",
+        "replacement": "galeenv ready"
+      },
+      {
+        "pattern": "Use gstack",
+        "replacement": "Use GaleEnv"
+      },
+      {
+        "pattern": " use gstack ",
+        "replacement": " use GaleEnv "
+      }
+    ],
+    "aggressive": [
+      {
+        "pattern": "\\bgstack\\b",
+        "replacement": "galeenv",
+        "regex": true
+      },
+      {
+        "pattern": "\\bGStack\\b",
+        "replacement": "GaleEnv",
+        "regex": true
+      },
+      {
+        "pattern": "\\bGSTACK\\b",
+        "replacement": "GALEENV",
+        "regex": true
+      }
+    ]
+  }
+}

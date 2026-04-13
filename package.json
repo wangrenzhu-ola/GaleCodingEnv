@@ -1,0 +1,14 @@
+{
+  "name": "galecodingenv",
+  "description": "GaleCodingEnv orchestration layer for upstream sync, branding, OpenSpec, and HKT-memory integration",
+  "private": true,
+  "scripts": {
+    "verify:upstream": "python3 scripts/sync_and_brand.py verify",
+    "sync:upstream": "python3 scripts/sync_and_brand.py sync",
+    "brand:workspace": "python3 scripts/sync_and_brand.py brand",
+    "refresh:workspace": "python3 scripts/sync_and_brand.py refresh",
+    "verify:hkt-memory": "python3 scripts/hkt_memory_bridge.py verify",
+    "verify:repo": "python3 scripts/doctor.py",
+    "bootstrap:v1": "npm run refresh:workspace && npm run verify:hkt-memory && npm run verify:repo"
+  }
+}

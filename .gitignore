@@ -1,0 +1,6 @@
+third_party/upstream-core/
+workspace/galeenv-workspace/
+__pycache__/
+*.pyc
+.DS_Store
+.env
